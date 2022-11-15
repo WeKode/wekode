@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Locomotive Scroll | Detection of elements in viewport & smooth scrolling with parallax effects.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <link rel="icon" type="image/x-icon" href="dist/images/favicons/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="dist/styles/main.css">
+
+    </head>
+    <body>
+
+        <div class="o-scroll" id="js-scroll" data-scroll-container>
+            <div data-scroll-section>
+                <div class="o-container">
+                    <header class="c-header" id="header">
+                        <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
+                            <div class="o-layout">
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-position="top" data-scroll-target="#header">
+                                </div>
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top" data-scroll-target="#header">
+                                    <div class="u-text-right">
+                                        <span class="nav-text c-header_heading_label">
+                                            <a href="https://locomotive.ca" target="_blank" rel="noopener noreferrer">
+                                                WeKode<span class="u-white">.</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="c-header_title o-h1" data-scroll>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="3" data-scroll-position="top">You <span class="u-white">only</span> have to</span>
+                            </span>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="2" data-scroll-position="top">Imagine</span>
+                            </span>
+                            <span class="c-header_title_line -version u-white text-serif">
+                                <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-delay="0.05">We </span>
+                                <span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top" data-scroll-delay="0.05"> </span>
+                                <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top" data-scroll-delay="0.05">Code</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top" data-scroll-delay="0.05">!</span>
+                            </span>
+                        </h1>
+                        <hr class="c-header_line" data-scroll data-scroll-offset="100" />
+                        <a class="c-header_logo" href="https://locomotive.ca" target="_blank">
+                            <img src="dist/images/scrollll.svg" alt="logo" width="60">
+                        </a>
+                    </header>
+                </div>
+            </div>
+
+            <section data-scroll-section>
+                <div class="o-container">
+                    <div class="c-summary" data-scroll>
+                        <div class="o-layout -gutter">
+                            <div class="o-layout_item u-2/5@from-medium">
+                                <p class="c-summary_text">
+                                    We are a web and digital agency specialized in the design and development of custom digital solutions. <br><br>
+                                    We assists its customers from the creation of their project to the production.
+                                </p>
+                            </div>
+                            <div class="o-layout_item u-3/5@from-medium">
+                                <ul class="c-summary_list">
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#speed-control" data-scroll-to>
+                                            01. Web Applications
+                                            <span class="c-summary_list_icon u-icon">
+                                                ↓
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#scroll-direction" data-scroll-to>
+                                            02. Mobile Application
+                                            <span class="c-summary_list_icon u-icon">
+                                                ↓
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#lerp-effect" data-scroll-to>
+                                            03. UI/UX
+                                            <span class="c-summary_list_icon u-icon">
+                                                ↓
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-summary_list_item u-label" data-scroll>
+                                        <a href="#fixed-elements" data-scroll-to>
+                                            04. Visual Identity
+                                            <span class="c-summary_list_icon u-icon">
+                                                ↓
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="speed-control">
+                    <div class="o-layout -gutter">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3 class="fw-bold">
+                                        01. <br>
+                                        Web Design
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            We design from scratch or redesign existing websites, landing pages, corporate websites, e-commerce. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <div class="o-image" data-scroll>
+                                        <img class="c-speed-block_image" src="dist/images/1.png" alt="Locomotive image from unsplash">
+                                    </div>
+                                </div>
+                                <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    Web Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout -gutter -bottom">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="4">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <div class="o-image" data-scroll data-scroll-speed="-1.5">
+                                        <img class="c-speed-block_image" src="dist/images/3.png" alt="Locomotive image from unsplash">
+                                    </div>
+                                </div>
+                                <p class="c-speed-block_title" data-scroll>
+                                    Mobile Applications
+                                </p>
+                                <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="1" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    React Native
+                                </span>
+                                <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    Flutter
+                                </span>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="o-layout u-text-right">
+                                <div class="o-layout_item u-1/2@from-medium">
+                                    <div class="c-speed-block -margin" data-scroll data-scroll-speed="6">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                            <div class="o-image" data-scroll data-scroll-speed="-2">
+                                                <img class="c-speed-block_image" src="dist/images/2.png" alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Tech
+                                        </p>
+                                        <span class="c-speed-block_bubble -left -top" data-scroll data-scroll-speed="2" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Laravel
+                                        </span>
+                                        <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Node
+                                        </span>
+                                        <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="9" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Vue.js
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="scroll-direction">
+                    <div class="c-direction-block_wrapper">
+                        <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#scroll-direction">
+                            <div class="c-section_infos_inner" data-scroll>
+                                <h3 class="fw-bold">
+                                    02. <br>
+                                    Web Applications
+                                </h3>
+                                <div class="c-sections_infos_text u-text">
+                                    <p>
+                                        We design products from scratch/idea stage or improve and scale by adding new features to existing ones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-direction-block" id="direction">
+                            <div class="c-direction-block_item -one">
+                                <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-target="#direction">
+                                    UI/UX · E-COMMERCE · WEBSITE · WEB APPLICATION
+                                </span>
+                            </div>
+                            <div class="c-direction-block_item -two">
+                                <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
+                                    MOBILE APPLICATION · VISUAL IDENTITY · WEB DESIGN
+                                </span>
+                            </div>
+                            <div class="c-direction-block_item -three">
+                                <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" data-scroll-target="#direction" data-scroll-delay="0.05">
+                                    MOBILE DESIGN 
+                                </span>
+                            </div>
+                            <div class="c-direction-block_item -four">
+                                <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="15" data-scroll-target="#direction">
+                                    SOCIAL MEDIA  
+                                </span>
+                            </div>
+                            <div class="c-direction-block_item -five">
+                                <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
+                                    VISUAL IDENTITY
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="lerp-effect">
+                    <div class="o-layout">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos" data-scroll>
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3 class="fw-bold">
+                                        03. <br>
+                                        UI/UX
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            Visuals are processed 60.000 times faster in the brain than text and we create beautiful graphics to communicate ideas and content easier.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-lerp-block">
+                                <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.2" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    01
+                                </span>
+                                <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.6" data-scroll-speed="6">
+                                    <span>
+                                        .
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="c-lerp-block">
+                                <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.06" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    02
+                                </span>
+                                <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.1" data-scroll-speed="6">
+                                    <span>
+                                        .
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="c-lerp-block">
+                                <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.03" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    03
+                                </span>
+                                <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.04" data-scroll-speed="6">
+                                    <span>
+                                        .
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section -fixed" data-scroll-section data-persistent>
+                <div class="o-container" id="fixed-elements">
+                    <div class="o-layout">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3 class="fw-bold">
+                                        04. <br>
+                                        Visual Identity
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            We always look for unique and powerful concepts to build memorable and inspiring brands.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                <div class="c-fixed_target" id="fixed-target"></div>
+                                <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url('dist/images/4.webp')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-scroll-section>
+                <div class="o-container">
+                    <div class="c-damn">
+                        <h1 class="o-title" data-scroll>
+                            <span class="o-title_line">
+                                <span>
+                                    LET'S START
+                                </span>
+                            </span>
+                            <span class="o-title_line">
+                                <span>
+                                    CREATING
+                                </span>
+                            </span>
+                            <span class="o-title_line">
+                                <span>
+                                    SOMETHING
+                                </span>
+                            </span>
+                            <span class="o-title_line u-white text-serif">
+                                <span>
+                                    SPECIAL !
+                                </span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+
+        <script src="dist/scripts/main.js"></script>
+    </body>
+</html>
